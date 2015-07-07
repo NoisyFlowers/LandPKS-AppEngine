@@ -1,0 +1,360 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://silicon-bivouac-496.appspot.com/_ah/api",
+  "name" : "plotendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://silicon-bivouac-496.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "noisyflowers.com",
+  "ownerName" : "noisyflowers.com",
+  "packagePath" : "landpks.server.gae.model",
+  "methods" : {
+    "plotendpoint.insertPlot" : {
+      "path" : "plot",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.insertPlot",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "plotendpoint.updatePlot" : {
+      "path" : "plot",
+      "httpMethod" : "PUT",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.updatePlot",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "plotendpoint.removePlot" : {
+      "path" : "plot/{id}",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.removePlot",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "plotendpoint.getPhotoUploadURL" : {
+      "path" : "stringreturn",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.getUploadUrl",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "plotendpoint.listPlot" : {
+      "path" : "plot",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.listPlot",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+          },
+          "afterDate" : {
+            "type" : "datetime",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "plotendpoint.getPlot" : {
+      "path" : "plot/{id}",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.getPlot",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Plot" : {
+        "id" : "Plot",
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "recorderName" : {
+            "type" : "string"
+          },
+          "organization" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number"
+          },
+          "longitude" : {
+            "type" : "number"
+          },
+          "city" : {
+            "type" : "string"
+          },
+          "modifiedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "landCover" : {
+            "type" : "string"
+          },
+          "grazed" : {
+            "type" : "boolean"
+          },
+          "flooding" : {
+            "type" : "boolean"
+          },
+          "slope" : {
+            "type" : "string"
+          },
+          "slopeShape" : {
+            "type" : "string"
+          },
+          "rockFragmentForSoilHorizon1" : {
+            "type" : "string"
+          },
+          "rockFragmentForSoilHorizon2" : {
+            "type" : "string"
+          },
+          "rockFragmentForSoilHorizon3" : {
+            "type" : "string"
+          },
+          "rockFragmentForSoilHorizon4" : {
+            "type" : "string"
+          },
+          "rockFragmentForSoilHorizon5" : {
+            "type" : "string"
+          },
+          "rockFragmentForSoilHorizon6" : {
+            "type" : "string"
+          },
+          "rockFragmentForSoilHorizon7" : {
+            "type" : "string"
+          },
+          "colorForSoilHorizon1" : {
+            "type" : "integer"
+          },
+          "colorForSoilHorizon2" : {
+            "type" : "integer"
+          },
+          "colorForSoilHorizon3" : {
+            "type" : "integer"
+          },
+          "colorForSoilHorizon4" : {
+            "type" : "integer"
+          },
+          "colorForSoilHorizon5" : {
+            "type" : "integer"
+          },
+          "colorForSoilHorizon6" : {
+            "type" : "integer"
+          },
+          "colorForSoilHorizon7" : {
+            "type" : "integer"
+          },
+          "textureForSoilHorizon1" : {
+            "type" : "string"
+          },
+          "textureForSoilHorizon2" : {
+            "type" : "string"
+          },
+          "textureForSoilHorizon3" : {
+            "type" : "string"
+          },
+          "textureForSoilHorizon4" : {
+            "type" : "string"
+          },
+          "textureForSoilHorizon5" : {
+            "type" : "string"
+          },
+          "textureForSoilHorizon6" : {
+            "type" : "string"
+          },
+          "textureForSoilHorizon7" : {
+            "type" : "string"
+          },
+          "surfaceCracking" : {
+            "type" : "boolean"
+          },
+          "surfaceSalt" : {
+            "type" : "boolean"
+          },
+          "landscapeNorthPhotoURL" : {
+            "type" : "string"
+          },
+          "landscapeEastPhotoURL" : {
+            "type" : "string"
+          },
+          "landscapeSouthPhotoURL" : {
+            "type" : "string"
+          },
+          "landscapeWestPhotoURL" : {
+            "type" : "string"
+          },
+          "soilPitPhotoURL" : {
+            "type" : "string"
+          },
+          "soilSamplesPhotoURL" : {
+            "type" : "string"
+          },
+          "recommendation" : {
+            "type" : "string"
+          },
+          "grassProductivity" : {
+            "type" : "number"
+          },
+          "grassErosion" : {
+            "type" : "number"
+          },
+          "cropProductivity" : {
+            "type" : "number"
+          },
+          "cropErosion" : {
+            "type" : "number"
+          },
+          "id" : {
+            "type" : "string"
+          }
+        }
+      },
+      "StringReturn" : {
+        "id" : "StringReturn",
+        "type" : "object",
+        "properties" : {
+          "theString" : {
+            "type" : "string"
+          }
+        }
+      },
+      "CollectionResponse_Plot" : {
+        "id" : "CollectionResponse_Plot",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Plot"
+            }
+          },
+          "nextPageToken" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.insertPlot" : {
+        "request" : {
+          "$ref" : "Plot"
+        },
+        "response" : {
+          "$ref" : "Plot"
+        }
+      },
+      "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.updatePlot" : {
+        "request" : {
+          "$ref" : "Plot"
+        },
+        "response" : {
+          "$ref" : "Plot"
+        }
+      },
+      "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.removePlot" : {
+      },
+      "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.getUploadUrl" : {
+        "response" : {
+          "$ref" : "StringReturn"
+        }
+      },
+      "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.listPlot" : {
+        "response" : {
+          "$ref" : "CollectionResponse_Plot"
+        }
+      },
+      "com.noisyflowers.landpks.server.gae.dal.PlotEndpoint.getPlot" : {
+        "response" : {
+          "$ref" : "Plot"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://silicon-bivouac-496.appspot.com/_ah/api",
+  "name" : "transectendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://silicon-bivouac-496.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "noisyflowers.com",
+  "ownerName" : "noisyflowers.com",
+  "packagePath" : "landpks.server.gae.model",
+  "methods" : {
+    "transectendpoint.removeTransect" : {
+      "path" : "transect/{id}",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.removeTransect",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "transectendpoint.insertTransect" : {
+      "path" : "transect",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.insertTransect",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "transectendpoint.listTransect" : {
+      "path" : "transect",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.listTransect",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+          },
+          "afterDate" : {
+            "type" : "datetime",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "transectendpoint.updateTransect" : {
+      "path" : "transect",
+      "httpMethod" : "PUT",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.updateTransect",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "transectendpoint.getTransect" : {
+      "path" : "transect/{id}",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com" ],
+      "clientIds" : [ "410858290704.apps.googleusercontent.com", "410858290704-4onhv4s5hm7uu0orqrhkgjct8nf80874.apps.googleusercontent.com", "410858290704-115smpeaac2co4v5vaft93bhcko7g5lm.apps.googleusercontent.com", "410858290704-5h6kk1adfgiojhjco55ssp1lr3ci59dn.apps.googleusercontent.com", "410858290704-u1iuk20e9d6ia8028nfge2l1fe6h8jmn.apps.googleusercontent.com", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.getTransect",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Transect" : {
+        "id" : "Transect",
+        "type" : "object",
+        "properties" : {
+          "siteID" : {
+            "type" : "string"
+          },
+          "direction" : {
+            "type" : "string"
+          },
+          "modifiedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "segments" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Segment"
+            }
+          },
+          "id" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Segment" : {
+        "id" : "Segment",
+        "type" : "object",
+        "properties" : {
+          "transect" : {
+            "$ref" : "Transect"
+          },
+          "range" : {
+            "type" : "string"
+          },
+          "stickSegments" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "StickSegment"
+            }
+          },
+          "canopyHeight" : {
+            "type" : "string"
+          },
+          "basalGap" : {
+            "type" : "boolean"
+          },
+          "canopyGap" : {
+            "type" : "boolean"
+          },
+          "species1Density" : {
+            "type" : "integer"
+          },
+          "species2Density" : {
+            "type" : "integer"
+          },
+          "speciesList" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "date" : {
+            "type" : "string"
+          },
+          "id" : {
+            "$ref" : "Key"
+          }
+        }
+      },
+      "StickSegment" : {
+        "id" : "StickSegment",
+        "type" : "object",
+        "properties" : {
+          "segment" : {
+            "$ref" : "Segment"
+          },
+          "segmentIndex" : {
+            "type" : "integer"
+          },
+          "covers" : {
+            "type" : "array",
+            "items" : {
+              "type" : "boolean"
+            }
+          },
+          "id" : {
+            "$ref" : "Key"
+          }
+        }
+      },
+      "Key" : {
+        "id" : "Key",
+        "type" : "object",
+        "properties" : {
+          "kind" : {
+            "type" : "string"
+          },
+          "appId" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "parent" : {
+            "$ref" : "Key"
+          },
+          "namespace" : {
+            "type" : "string"
+          },
+          "complete" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "CollectionResponse_Transect" : {
+        "id" : "CollectionResponse_Transect",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Transect"
+            }
+          },
+          "nextPageToken" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.removeTransect" : {
+      },
+      "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.insertTransect" : {
+        "request" : {
+          "$ref" : "Transect"
+        },
+        "response" : {
+          "$ref" : "Transect"
+        }
+      },
+      "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.listTransect" : {
+        "response" : {
+          "$ref" : "CollectionResponse_Transect"
+        }
+      },
+      "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.updateTransect" : {
+        "request" : {
+          "$ref" : "Transect"
+        },
+        "response" : {
+          "$ref" : "Transect"
+        }
+      },
+      "com.noisyflowers.landpks.server.gae.dal.TransectEndpoint.getTransect" : {
+        "response" : {
+          "$ref" : "Transect"
+        }
+      }
+    }
+  }
+}

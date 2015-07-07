@@ -1,0 +1,11 @@
+<!-- Indices written at Mon, 13 Oct 2014 10:51:16 MST -->
+
+<datastore-indexes>
+
+    <!-- Used 12 times in query history -->
+    <datastore-index kind="Plot" ancestor="false" source="auto">
+        <property name="recorderName" direction="asc"/>
+        <property name="modifiedDate" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>

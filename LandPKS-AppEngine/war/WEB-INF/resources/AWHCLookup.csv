@@ -1,0 +1,45 @@
+Soil Texture,Rock Fragment Range,AWHC
+Clay,0-15%,0.11
+Clay,15-35%,0.09
+Clay,35-60%,0.07
+Clay,>60%,0.06
+Clay Loam,0-15%,0.12
+Clay Loam,15-35%,0.1
+Clay Loam,35-60%,0.08
+Clay Loam,>60%,0.07
+Loam,0-15%,0.13
+Loam,15-35%,0.11
+Loam,35-60%,0.08
+Loam,>60%,0.07
+Loamy Sand,0-15%,0.06
+Loamy Sand,15-35%,0.05
+Loamy Sand,35-60%,0.04
+Loamy Sand,>60%,0.03
+Sand,0-15%,0.04
+Sand,15-35%,0.03
+Sand,35-60%,0.02
+Sand,>60%,0.02
+Sandy Clay,0-15%,0.1
+Sandy Clay,15-35%,0.08
+Sandy Clay,35-60%,0.06
+Sandy Clay,>60%,0.06
+Sandy Clay Loam,0-15%,0.09
+Sandy Clay Loam,15-35%,0.08
+Sandy Clay Loam,35-60%,0.06
+Sandy Clay Loam,>60%,0.05
+Sandy Loam,0-15%,0.09
+Sandy Loam,15-35%,0.07
+Sandy Loam,35-60%,0.05
+Sandy Loam,>60%,0.05
+Silty Clay,0-15%,0.12
+Silty Clay,15-35%,0.1
+Silty Clay,35-60%,0.08
+Silty Clay,>60%,0.07
+Silty Clay Loam,0-15%,0.15
+Silty Clay Loam,15-35%,0.14
+Silty Clay Loam,35-60%,0.09
+Silty Clay Loam,>60%,0.09
+Silt Loam,0-15%,0.17
+Silt Loam,15-35%,0.14
+Silt Loam,35-60%,0.1
+Silt Loam,>60%,0.09

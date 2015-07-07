@@ -1,0 +1,176 @@
+Surface Cracking,Surface (0-10 cm)Soil Texture Class,Slope,Profile (0-50 cm) AWHC,Grass Productivity,Grass Erosion,Maize Productivity Potential,Maize Erosion Risk
+N,Sandy Loam,flat (0-2%),5.56,0,0,0.86,0.00
+N,Sandy Loam,gentle (3-5%),5.56,0,0,0.82,0.01
+N,Sandy Loam,moderate (6-10%),5.56,0,0,0.78,0.04
+N,Sandy Loam,rolling (11-15%),5.56,0,0,0.74,0.09
+N,Sandy Loam,hilly (16-30%),5.56,0,0,0.66,0.32
+N,Sandy Loam,steep (31-60%),5.56,0,0,0.52,0.49
+N,Sandy Loam,very steep (>60%),5.56,0,0,0.41,0.62
+N,Silty Clay Loam,flat (0-2%),8.5,0,0,0.71,0.00
+N,Silty Clay Loam,gentle (3-5%),8.5,0,0,0.67,0.01
+N,Silty Clay Loam,moderate (6-10%),8.5,0,0,0.63,0.04
+N,Silty Clay Loam,rolling (11-15%),8.5,0,0,0.58,0.10
+N,Silty Clay Loam,hilly (16-30%),8.5,0,0,0.53,0.27
+N,Silty Clay Loam,steep (31-60%),8.5,0,0,0.42,0.39
+N,Silty Clay Loam,very steep (>60%),8.5,0,0,0.36,0.49
+N,Clay Loam,flat (0-2%),6.2,0,0,0.61,0.01
+N,Clay Loam,gentle (3-5%),6.2,0,0,0.56,0.03
+N,Clay Loam,moderate (6-10%),6.2,0,0,0.50,0.09
+N,Clay Loam,rolling (11-15%),6.2,0,0,0.45,0.21
+N,Clay Loam,hilly (16-30%),6.2,0,0,0.36,0.56
+N,Clay Loam,steep (31-60%),6.2,0,0,0.27,0.76
+N,Clay Loam,very steep (>60%),6.2,0,0,0.23,0.81
+N,Silty Clay Loam,flat (0-2%),7.48,0,0,0.43,0.01
+N,Silty Clay Loam,gentle (3-5%),7.48,0,0,0.39,0.04
+N,Silty Clay Loam,moderate (6-10%),7.48,0,0,0.35,0.11
+N,Silty Clay Loam,rolling (11-15%),7.48,0,0,0.32,0.26
+N,Silty Clay Loam,hilly (16-30%),7.48,0,0,0.28,0.57
+N,Silty Clay Loam,steep (31-60%),7.48,0,0,0.25,0.76
+N,Silty Clay Loam,very steep (>60%),7.48,0,0,0.24,0.81
+N,Silty Clay Loam,flat (0-2%),8.02,0,0,0.48,0.01
+N,Silty Clay Loam,gentle (3-5%),8.02,0,0,0.44,0.04
+N,Silty Clay Loam,moderate (6-10%),8.02,0,0,0.39,0.11
+N,Silty Clay Loam,rolling (11-15%),8.02,0,0,0.35,0.27
+N,Silty Clay Loam,hilly (16-30%),8.02,0,0,0.23,0.56
+N,Silty Clay Loam,steep (31-60%),8.02,0,0,0.25,0.75
+N,Silty Clay Loam,very steep (>60%),8.02,0,0,0.25,0.79
+N,Clay Loam,flat (0-2%),6.44,0,0,0.63,0.01
+N,Clay Loam,gentle (3-5%),6.44,0,0,0.59,0.02
+N,Clay Loam,moderate (6-10%),6.44,0,0,0.54,0.06
+N,Clay Loam,rolling (11-15%),6.44,0,0,0.48,0.15
+N,Clay Loam,hilly (16-30%),6.44,0,0,0.41,0.43
+N,Clay Loam,steep (31-60%),6.44,0,0,0.31,0.60
+N,Clay Loam,very steep (>60%),6.44,0,0,0.27,0.70
+N,Sand,flat (0-2%),3.52,0,0,0.71,0.00
+N,Sand,gentle (3-5%),3.52,0,0,0.69,0.01
+N,Sand,moderate (6-10%),3.52,0,0,0.64,0.04
+N,Sand,rolling (11-15%),3.52,0,0,0.61,0.10
+N,Sand,hilly (16-30%),3.52,0,0,0.53,0.31
+N,Sand,steep (31-60%),3.52,0,0,0.40,0.87
+N,Sand,very steep (>60%),3.52,0,0,0.32,1.00
+N,Clay Loam,flat (0-2%),7.78,0,0,0.72,0.00
+N,Clay Loam,gentle (3-5%),7.78,0,0,0.68,0.01
+N,Clay Loam,moderate (6-10%),7.78,0,0,0.64,0.04
+N,Clay Loam,rolling (11-15%),7.78,0,0,0.59,0.09
+N,Clay Loam,hilly (16-30%),7.78,0,0,0.52,0.27
+N,Clay Loam,steep (31-60%),7.78,0,0,0.40,0.39
+N,Clay Loam,very steep (>60%),7.78,0,0,0.33,0.49
+N,Loam,flat (0-2%),7.45,0,0,0.57,0.01
+N,Loam,gentle (3-5%),7.45,0,0,0.53,0.02
+N,Loam,moderate (6-10%),7.45,0,0,0.49,0.07
+N,Loam,rolling (11-15%),7.45,0,0,0.44,0.17
+N,Loam,hilly (16-30%),7.45,0,0,0.37,0.44
+N,Loam,steep (31-60%),7.45,0,0,0.29,0.61
+N,Loam,very steep (>60%),7.45,0,0,0.26,0.67
+N,Sandy Clay Loam,flat (0-2%),5,0,0,0.65,0.01
+N,Sandy Clay Loam,gentle (3-5%),5,0,0,0.62,0.03
+N,Sandy Clay Loam,moderate (6-10%),5,0,0,0.56,0.08
+N,Sandy Clay Loam,rolling (11-15%),5,0,0,0.50,0.19
+N,Sandy Clay Loam,hilly (16-30%),5,0,0,0.41,0.56
+N,Sandy Clay Loam,steep (31-60%),5,0,0,0.31,0.78
+N,Sandy Clay Loam,very steep (>60%),5,0,0,0.24,0.85
+N,Loamy Sand,flat (0-2%),3,0,0,0.67,0.00
+N,Loamy Sand,gentle (3-5%),3,0,0,0.64,0.02
+N,Loamy Sand,moderate (6-10%),3,0,0,0.60,0.05
+N,Loamy Sand,rolling (11-15%),3,0,0,0.56,0.12
+N,Loamy Sand,hilly (16-30%),3,0,0,0.48,0.37
+N,Loamy Sand,steep (31-60%),3,0,0,0.36,0.86
+N,Loamy Sand,very steep (>60%),3,0,0,0.29,0.96
+N,Silt Loam,flat (0-2%),8.36,0,0,0.62,0.01
+N,Silt Loam,gentle (3-5%),8.36,0,0,0.58,0.03
+N,Silt Loam,moderate (6-10%),8.36,0,0,0.53,0.08
+N,Silt Loam,rolling (11-15%),8.36,0,0,0.48,0.18
+N,Silt Loam,hilly (16-30%),8.36,0,0,0.41,0.45
+N,Silt Loam,steep (31-60%),8.36,0,0,0.34,0.62
+N,Silt Loam,very steep (>60%),8.36,0,0,0.29,0.70
+N,Sandy Clay Loam,flat (0-2%),5.04,0,0,0.92,0.00
+N,Sandy Clay Loam,gentle (3-5%),5.04,0,0,0.87,0.01
+N,Sandy Clay Loam,moderate (6-10%),5.04,0,0,0.81,0.02
+N,Sandy Clay Loam,rolling (11-15%),5.04,0,0,0.75,0.07
+N,Sandy Clay Loam,hilly (16-30%),5.04,0,0,0.66,0.25
+N,Sandy Clay Loam,steep (31-60%),5.04,0,0,0.52,0.44
+N,Sandy Clay Loam,very steep (>60%),5.04,0,0,0.40,0.57
+N,Loamy Sand,flat (0-2%),3.44,0,0,1.00,0.00
+N,Loamy Sand,gentle (3-5%),3.44,0,0,0.96,0.00
+N,Loamy Sand,moderate (6-10%),3.44,0,0,0.92,0.01
+N,Loamy Sand,rolling (11-15%),3.44,0,0,0.86,0.04
+N,Loamy Sand,hilly (16-30%),3.44,0,0,0.76,0.16
+N,Loamy Sand,steep (31-60%),3.44,0,0,0.61,0.49
+N,Loamy Sand,very steep (>60%),3.44,0,0,0.49,0.60
+N,Sandy Clay Loam,flat (0-2%),6.28,0,0,0.80,0.00
+N,Sandy Clay Loam,gentle (3-5%),6.28,0,0,0.77,0.01
+N,Sandy Clay Loam,moderate (6-10%),6.28,0,0,0.73,0.03
+N,Sandy Clay Loam,rolling (11-15%),6.28,0,0,0.69,0.08
+N,Sandy Clay Loam,hilly (16-30%),6.28,0,0,0.61,0.28
+N,Sandy Clay Loam,steep (31-60%),6.28,0,0,0.47,0.44
+N,Sandy Clay Loam,very steep (>60%),6.28,0,0,0.36,0.55
+N,Sand,flat (0-2%),2,0,0,0.74,0.00
+N,Sand,gentle (3-5%),2,0,0,0.71,0.01
+N,Sand,moderate (6-10%),2,0,0,0.68,0.03
+N,Sand,rolling (11-15%),2,0,0,0.63,0.07
+N,Sand,hilly (16-30%),2,0,0,0.56,0.24
+N,Sand,steep (31-60%),2,0,0,0.43,0.83
+N,Sand,very steep (>60%),2,0,0,0.34,0.96
+N,Clay,flat (0-2%),6,0,0,0.51,0.01
+N,Clay,gentle (3-5%),6,0,0,0.46,0.02
+N,Clay,moderate (6-10%),6,0,0,0.42,0.06
+N,Clay,rolling (11-15%),6,0,0,0.38,0.15
+N,Clay,hilly (16-30%),6,0,0,0.33,0.41
+N,Clay,steep (31-60%),6,0,0,0.26,0.56
+N,Clay,very steep (>60%),6,0,0,0.22,0.63
+N,Silt Loam,flat (0-2%),7.75,0,0,0.51,0.01
+N,Silt Loam,gentle (3-5%),7.75,0,0,0.47,0.04
+N,Silt Loam,moderate (6-10%),7.75,0,0,0.42,0.12
+N,Silt Loam,rolling (11-15%),7.75,0,0,0.37,0.29
+N,Silt Loam,hilly (16-30%),7.75,0,0,0.32,0.61
+N,Silt Loam,steep (31-60%),7.75,0,0,0.27,0.80
+N,Silt Loam,very steep (>60%),7.75,0,0,0.24,0.84
+N,Loamy Sand,flat (0-2%),4.48,0,0,0.83,0.00
+N,Loamy Sand,gentle (3-5%),4.48,0,0,0.81,0.01
+N,Loamy Sand,moderate (6-10%),4.48,0,0,0.77,0.02
+N,Loamy Sand,rolling (11-15%),4.48,0,0,0.73,0.06
+N,Loamy Sand,hilly (16-30%),4.48,0,0,0.67,0.21
+N,Loamy Sand,steep (31-60%),4.48,0,0,0.57,0.50
+N,Loamy Sand,very steep (>60%),4.48,0,0,0.46,0.62
+N,Loam,flat (0-2%),7,0,0,0.69,0.01
+N,Loam,gentle (3-5%),7,0,0,0.64,0.02
+N,Loam,moderate (6-10%),7,0,0,0.59,0.07
+N,Loam,rolling (11-15%),7,0,0,0.53,0.16
+N,Loam,hilly (16-30%),7,0,0,0.45,0.46
+N,Loam,steep (31-60%),7,0,0,0.34,0.66
+N,Loam,very steep (>60%),7,0,0,0.29,0.75
+N,Sandy Loam,flat (0-2%),5,0,0,0.64,0.01
+N,Sandy Loam,gentle (3-5%),5,0,0,0.58,0.02
+N,Sandy Loam,moderate (6-10%),5,0,0,0.52,0.06
+N,Sandy Loam,rolling (11-15%),5,0,0,0.46,0.15
+N,Sandy Loam,hilly (16-30%),5,0,0,0.37,0.44
+N,Sandy Loam,steep (31-60%),5,0,0,0.28,0.72
+N,Sandy Loam,very steep (>60%),5,0,0,0.22,0.82
+N,Silt Loam,flat (0-2%),8.5,0,0,0.56,0.01
+N,Silt Loam,gentle (3-5%),8.5,0,0,0.52,0.03
+N,Silt Loam,moderate (6-10%),8.5,0,0,0.48,0.09
+N,Silt Loam,rolling (11-15%),8.5,0,0,0.43,0.21
+N,Silt Loam,hilly (16-30%),8.5,0,0,0.36,0.46
+N,Silt Loam,steep (31-60%),8.5,0,0,0.29,0.62
+N,Silt Loam,very steep (>60%),8.5,0,0,0.26,0.67
+N,Sand,flat (0-2%),2.74,0,0,0.89,0.00
+N,Sand,gentle (3-5%),2.74,0,0,0.87,0.00
+N,Sand,moderate (6-10%),2.74,0,0,0.85,0.01
+N,Sand,rolling (11-15%),2.74,0,0,0.80,0.03
+N,Sand,hilly (16-30%),2.74,0,0,0.73,0.11
+N,Sand,steep (31-60%),2.74,0,0,0.63,0.48
+N,Sand,very steep (>60%),2.74,0,0,0.52,0.60
+Y,Silty Clay Loam,flat (0-2%),6.9,0,0,0.55,0.01
+Y,Silty Clay Loam,gentle (3-5%),6.9,0,0,0.51,0.03
+Y,Silty Clay Loam,moderate (6-10%),6.9,0,0,0.46,0.08
+Y,Silty Clay Loam,rolling (11-15%),6.9,0,0,0.40,0.19
+Y,Silty Clay Loam,hilly (16-30%),6.9,0,0,0.34,0.44
+Y,Silty Clay Loam,steep (31-60%),6.9,0,0,0.29,0.61
+Y,Silty Clay Loam,very steep (>60%),6.9,0,0,0.26,0.67
+Y,Clay,flat (0-2%),6,0,0,0.49,0.01
+Y,Clay,gentle (3-5%),6,0,0,0.44,0.04
+Y,Clay,moderate (6-10%),6,0,0,0.39,0.11
+Y,Clay,rolling (11-15%),6,0,0,0.35,0.25
+Y,Clay,hilly (16-30%),6,0,0,0.31,0.56
+Y,Clay,steep (31-60%),6,0,0,0.23,0.74
+Y,Clay,very steep (>60%),6,0,0,0.23,0.77

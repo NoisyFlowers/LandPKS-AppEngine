@@ -1,0 +1,314 @@
+{
+ "kind": "discovery#rpcDescription",
+ "etag": "\"koCc_mmAOJe4d9CoedmJUnZeEcg/1OIL734PUyEV5FOW2_leI676qOQ\"",
+ "discoveryVersion": "v1",
+ "id": "transectendpoint:v1",
+ "name": "transectendpoint",
+ "version": "v1",
+ "description": "This is an API",
+ "ownerDomain": "noisyflowers.com",
+ "ownerName": "noisyflowers.com",
+ "packagePath": "landpks.server.gae.model",
+ "icons": {
+  "x16": "http://www.google.com/images/icons/product/search-16.gif",
+  "x32": "http://www.google.com/images/icons/product/search-32.gif"
+ },
+ "protocol": "rpc",
+ "rootUrl": "https://silicon-bivouac-496.appspot.com/_ah/api/",
+ "rpcUrl": "https://silicon-bivouac-496.appspot.com/_ah/api/rpc",
+ "rpcPath": "/_ah/api/rpc",
+ "parameters": {
+  "alt": {
+   "type": "string",
+   "description": "Data format for the response.",
+   "default": "json",
+   "enum": [
+    "json"
+   ],
+   "enumDescriptions": [
+    "Responses with Content-Type of application/json"
+   ],
+   "location": "query"
+  },
+  "fields": {
+   "type": "string",
+   "description": "Selector specifying which fields to include in a partial response.",
+   "location": "query"
+  },
+  "key": {
+   "type": "string",
+   "description": "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.",
+   "location": "query"
+  },
+  "oauth_token": {
+   "type": "string",
+   "description": "OAuth 2.0 token for the current user.",
+   "location": "query"
+  },
+  "prettyPrint": {
+   "type": "boolean",
+   "description": "Returns response with indentations and line breaks.",
+   "default": "true",
+   "location": "query"
+  },
+  "quotaUser": {
+   "type": "string",
+   "description": "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.",
+   "location": "query"
+  },
+  "userIp": {
+   "type": "string",
+   "description": "IP address of the site where the request originates. Use this if you want to enforce per-user limits.",
+   "location": "query"
+  }
+ },
+ "auth": {
+  "oauth2": {
+   "scopes": {
+    "https://www.googleapis.com/auth/userinfo.email": {
+     "description": "View your email address"
+    },
+    "https://www.googleapis.com/auth/userinfo.profile": {
+     "description": "View your basic profile info"
+    }
+   }
+  }
+ },
+ "schemas": {
+  "CollectionResponse_Transect": {
+   "id": "CollectionResponse_Transect",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Transect"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "Key": {
+   "id": "Key",
+   "type": "object",
+   "properties": {
+    "appId": {
+     "type": "string"
+    },
+    "complete": {
+     "type": "boolean"
+    },
+    "id": {
+     "type": "string",
+     "format": "int64"
+    },
+    "kind": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "namespace": {
+     "type": "string"
+    },
+    "parent": {
+     "$ref": "Key"
+    }
+   }
+  },
+  "Segment": {
+   "id": "Segment",
+   "type": "object",
+   "properties": {
+    "basalGap": {
+     "type": "boolean"
+    },
+    "canopyGap": {
+     "type": "boolean"
+    },
+    "canopyHeight": {
+     "type": "string"
+    },
+    "date": {
+     "type": "string"
+    },
+    "id": {
+     "$ref": "Key"
+    },
+    "range": {
+     "type": "string"
+    },
+    "species1Density": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "species2Density": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "speciesList": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "stickSegments": {
+     "type": "array",
+     "items": {
+      "$ref": "StickSegment"
+     }
+    },
+    "transect": {
+     "$ref": "Transect"
+    }
+   }
+  },
+  "StickSegment": {
+   "id": "StickSegment",
+   "type": "object",
+   "properties": {
+    "covers": {
+     "type": "array",
+     "items": {
+      "type": "boolean"
+     }
+    },
+    "id": {
+     "$ref": "Key"
+    },
+    "segment": {
+     "$ref": "Segment"
+    },
+    "segmentIndex": {
+     "type": "integer",
+     "format": "int32"
+    }
+   }
+  },
+  "Transect": {
+   "id": "Transect",
+   "type": "object",
+   "properties": {
+    "direction": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "modifiedDate": {
+     "type": "string",
+     "format": "date-time"
+    },
+    "segments": {
+     "type": "array",
+     "items": {
+      "$ref": "Segment"
+     }
+    },
+    "siteID": {
+     "type": "string"
+    }
+   }
+  }
+ },
+ "methods": {
+  "transectendpoint.getTransect": {
+   "id": "transectendpoint.getTransect",
+   "allowGet": true,
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "returns": {
+    "$ref": "Transect"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "transectendpoint.insertTransect": {
+   "id": "transectendpoint.insertTransect",
+   "parameters": {
+    "resource": {
+     "$ref": "Transect"
+    }
+   },
+   "parameterOrder": [
+    "resource"
+   ],
+   "returns": {
+    "$ref": "Transect"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "transectendpoint.listTransect": {
+   "id": "transectendpoint.listTransect",
+   "allowGet": true,
+   "parameters": {
+    "afterDate": {
+     "type": "string",
+     "format": "date-time"
+    },
+    "cursor": {
+     "type": "string"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32"
+    }
+   },
+   "returns": {
+    "$ref": "CollectionResponse_Transect"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "transectendpoint.removeTransect": {
+   "id": "transectendpoint.removeTransect",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "transectendpoint.updateTransect": {
+   "id": "transectendpoint.updateTransect",
+   "parameters": {
+    "resource": {
+     "$ref": "Transect"
+    }
+   },
+   "parameterOrder": [
+    "resource"
+   ],
+   "returns": {
+    "$ref": "Transect"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  }
+ }
+}

@@ -1,0 +1,373 @@
+{
+ "kind": "discovery#rpcDescription",
+ "etag": "\"koCc_mmAOJe4d9CoedmJUnZeEcg/KycMLXbagznPkMrAVFxkeBSPHNE\"",
+ "discoveryVersion": "v1",
+ "id": "plotendpoint:v1",
+ "name": "plotendpoint",
+ "version": "v1",
+ "description": "This is an API",
+ "ownerDomain": "noisyflowers.com",
+ "ownerName": "noisyflowers.com",
+ "packagePath": "landpks.server.gae.model",
+ "icons": {
+  "x16": "http://www.google.com/images/icons/product/search-16.gif",
+  "x32": "http://www.google.com/images/icons/product/search-32.gif"
+ },
+ "protocol": "rpc",
+ "rootUrl": "https://silicon-bivouac-496.appspot.com/_ah/api/",
+ "rpcUrl": "https://silicon-bivouac-496.appspot.com/_ah/api/rpc",
+ "rpcPath": "/_ah/api/rpc",
+ "parameters": {
+  "alt": {
+   "type": "string",
+   "description": "Data format for the response.",
+   "default": "json",
+   "enum": [
+    "json"
+   ],
+   "enumDescriptions": [
+    "Responses with Content-Type of application/json"
+   ],
+   "location": "query"
+  },
+  "fields": {
+   "type": "string",
+   "description": "Selector specifying which fields to include in a partial response.",
+   "location": "query"
+  },
+  "key": {
+   "type": "string",
+   "description": "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.",
+   "location": "query"
+  },
+  "oauth_token": {
+   "type": "string",
+   "description": "OAuth 2.0 token for the current user.",
+   "location": "query"
+  },
+  "prettyPrint": {
+   "type": "boolean",
+   "description": "Returns response with indentations and line breaks.",
+   "default": "true",
+   "location": "query"
+  },
+  "quotaUser": {
+   "type": "string",
+   "description": "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.",
+   "location": "query"
+  },
+  "userIp": {
+   "type": "string",
+   "description": "IP address of the site where the request originates. Use this if you want to enforce per-user limits.",
+   "location": "query"
+  }
+ },
+ "auth": {
+  "oauth2": {
+   "scopes": {
+    "https://www.googleapis.com/auth/userinfo.email": {
+     "description": "View your email address"
+    },
+    "https://www.googleapis.com/auth/userinfo.profile": {
+     "description": "View your basic profile info"
+    }
+   }
+  }
+ },
+ "schemas": {
+  "CollectionResponse_Plot": {
+   "id": "CollectionResponse_Plot",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Plot"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "Plot": {
+   "id": "Plot",
+   "type": "object",
+   "properties": {
+    "city": {
+     "type": "string"
+    },
+    "colorForSoilHorizon1": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "colorForSoilHorizon2": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "colorForSoilHorizon3": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "colorForSoilHorizon4": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "colorForSoilHorizon5": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "colorForSoilHorizon6": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "colorForSoilHorizon7": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "cropErosion": {
+     "type": "number",
+     "format": "double"
+    },
+    "cropProductivity": {
+     "type": "number",
+     "format": "double"
+    },
+    "flooding": {
+     "type": "boolean"
+    },
+    "grassErosion": {
+     "type": "number",
+     "format": "double"
+    },
+    "grassProductivity": {
+     "type": "number",
+     "format": "double"
+    },
+    "grazed": {
+     "type": "boolean"
+    },
+    "id": {
+     "type": "string"
+    },
+    "landCover": {
+     "type": "string"
+    },
+    "landscapeEastPhotoURL": {
+     "type": "string"
+    },
+    "landscapeNorthPhotoURL": {
+     "type": "string"
+    },
+    "landscapeSouthPhotoURL": {
+     "type": "string"
+    },
+    "landscapeWestPhotoURL": {
+     "type": "string"
+    },
+    "latitude": {
+     "type": "number",
+     "format": "double"
+    },
+    "longitude": {
+     "type": "number",
+     "format": "double"
+    },
+    "modifiedDate": {
+     "type": "string",
+     "format": "date-time"
+    },
+    "name": {
+     "type": "string"
+    },
+    "organization": {
+     "type": "string"
+    },
+    "recommendation": {
+     "type": "string"
+    },
+    "recorderName": {
+     "type": "string"
+    },
+    "rockFragmentForSoilHorizon1": {
+     "type": "string"
+    },
+    "rockFragmentForSoilHorizon2": {
+     "type": "string"
+    },
+    "rockFragmentForSoilHorizon3": {
+     "type": "string"
+    },
+    "rockFragmentForSoilHorizon4": {
+     "type": "string"
+    },
+    "rockFragmentForSoilHorizon5": {
+     "type": "string"
+    },
+    "rockFragmentForSoilHorizon6": {
+     "type": "string"
+    },
+    "rockFragmentForSoilHorizon7": {
+     "type": "string"
+    },
+    "slope": {
+     "type": "string"
+    },
+    "slopeShape": {
+     "type": "string"
+    },
+    "soilPitPhotoURL": {
+     "type": "string"
+    },
+    "soilSamplesPhotoURL": {
+     "type": "string"
+    },
+    "surfaceCracking": {
+     "type": "boolean"
+    },
+    "surfaceSalt": {
+     "type": "boolean"
+    },
+    "textureForSoilHorizon1": {
+     "type": "string"
+    },
+    "textureForSoilHorizon2": {
+     "type": "string"
+    },
+    "textureForSoilHorizon3": {
+     "type": "string"
+    },
+    "textureForSoilHorizon4": {
+     "type": "string"
+    },
+    "textureForSoilHorizon5": {
+     "type": "string"
+    },
+    "textureForSoilHorizon6": {
+     "type": "string"
+    },
+    "textureForSoilHorizon7": {
+     "type": "string"
+    }
+   }
+  },
+  "StringReturn": {
+   "id": "StringReturn",
+   "type": "object",
+   "properties": {
+    "theString": {
+     "type": "string"
+    }
+   }
+  }
+ },
+ "methods": {
+  "plotendpoint.getPhotoUploadURL": {
+   "id": "plotendpoint.getPhotoUploadURL",
+   "allowGet": true,
+   "returns": {
+    "$ref": "StringReturn"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "plotendpoint.getPlot": {
+   "id": "plotendpoint.getPlot",
+   "allowGet": true,
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "returns": {
+    "$ref": "Plot"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "plotendpoint.insertPlot": {
+   "id": "plotendpoint.insertPlot",
+   "parameters": {
+    "resource": {
+     "$ref": "Plot"
+    }
+   },
+   "parameterOrder": [
+    "resource"
+   ],
+   "returns": {
+    "$ref": "Plot"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "plotendpoint.listPlot": {
+   "id": "plotendpoint.listPlot",
+   "allowGet": true,
+   "parameters": {
+    "afterDate": {
+     "type": "string",
+     "format": "date-time"
+    },
+    "cursor": {
+     "type": "string"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32"
+    }
+   },
+   "returns": {
+    "$ref": "CollectionResponse_Plot"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "plotendpoint.removePlot": {
+   "id": "plotendpoint.removePlot",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  },
+  "plotendpoint.updatePlot": {
+   "id": "plotendpoint.updatePlot",
+   "parameters": {
+    "resource": {
+     "$ref": "Plot"
+    }
+   },
+   "parameterOrder": [
+    "resource"
+   ],
+   "returns": {
+    "$ref": "Plot"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+   ]
+  }
+ }
+}
