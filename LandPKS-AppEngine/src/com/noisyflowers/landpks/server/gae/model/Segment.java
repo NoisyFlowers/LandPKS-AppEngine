@@ -71,7 +71,11 @@ public class Segment {
     private Boolean basalGap;
     private Boolean canopyGap;
     
-    private Integer species1Density;
+    private Integer speciesOfInterest1Count;
+    private Integer speciesOfInterest2Count;
+    
+    //No longer used, but kept for old records
+    private Integer species1Density; 
     private Integer species2Density;
     
     private List<String> speciesList;
@@ -129,23 +133,43 @@ public class Segment {
 		this.canopyGap = canopyGap;
 	}
 
+	public Integer getSpeciesOfInterest1Count() {
+		return speciesOfInterest1Count != null ? speciesOfInterest1Count : species1Density;
+	}
+	public void setSpeciesOfInterest1Count(Integer species1Count) {
+		this.speciesOfInterest1Count = species1Count;
+	}
+
+	public Integer getSpeciesOfInterest2Count() {
+		return speciesOfInterest2Count != null ? speciesOfInterest2Count : species2Density;
+	}
+	public void setSpeciesOfInterest2Count(Integer species2Count) {
+		this.speciesOfInterest2Count = species2Count;
+	}
+
+	@Deprecated
 	public Integer getSpecies1Density() {
-		return species1Density;
+		return speciesOfInterest1Count != null ? speciesOfInterest1Count : species1Density;
 	}
-	public void setSpecies1Density(Integer species1Density) {
-		this.species1Density = species1Density;
+	@Deprecated
+	public void setSpecies1Density(Integer species1Count) {
+		this.speciesOfInterest1Count = species1Count;
 	}
 
+	@Deprecated
 	public Integer getSpecies2Density() {
-		return species2Density;
+		return speciesOfInterest2Count != null ? speciesOfInterest2Count : species2Density;
 	}
-	public void setSpecies2Density(Integer species2Density) {
-		this.species2Density = species2Density;
+	@Deprecated
+	public void setSpecies2Density(Integer species2Count) {
+		this.speciesOfInterest2Count = species2Count;
 	}
 
+	@Deprecated
 	public List<String> getSpeciesList() {
 		return speciesList;
 	}
+	@Deprecated
 	public void setSpeciesList(List<String> speciesList) {
 		this.speciesList = speciesList;
 	}

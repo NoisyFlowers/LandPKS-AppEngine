@@ -46,10 +46,12 @@ import com.noisyflowers.landpks.server.gae.EMF;
 import com.noisyflowers.landpks.server.gae.dal.PlotEndpoint;
 import com.noisyflowers.landpks.server.gae.model.AWHCMapping;
 import com.noisyflowers.landpks.server.gae.model.Plot;
+import com.noisyflowers.landpks.server.gae.model.Plot.Grazing;
 import com.noisyflowers.landpks.server.gae.model.ProductivityAndErosionMapping;
 import com.noisyflowers.landpks.server.gae.util.Constants.RockFragmentRange;
 import com.noisyflowers.landpks.server.gae.util.Constants.SoilHorizonName;
 import com.noisyflowers.landpks.server.gae.util.Constants.SoilTexture;
+
 
 public class SoilDataCruncher {
 	private static final String TAG = SoilDataCruncher.class.getName(); 
@@ -136,11 +138,30 @@ public class SoilDataCruncher {
 					"longitude=" + plot.getLongitude() + "&" +
 					"city=" + (plot.getCity() == null ? "" : URLEncoder.encode(plot.getCity(), charset)) + "&" +
 					"modified_date=" + (plot.getModifiedDate() == null ? "" : URLEncoder.encode(plot.getModifiedDate().toString(), charset)) + "&" +
-					"land_cover=" + (plot.getLandCover() == null ? "" : URLEncoder.encode(plot.getLandCover(), charset)) + "&" +
-					"grazed=" + plot.isGrazed() + "&" +
+					"land_cover=" + (plot.getLandCover() == null ? "" : URLEncoder.encode(plot.getLandCover(), charset)) + "&";
+					
+					Boolean grazed = plot.isGrazed();  
+					StringBuilder sB = new StringBuilder();
+					if (plot.getGrazing() != null) {
+						boolean first = true;
+						for (Grazing g : plot.getGrazing()) {
+							if (!first) {
+								sB.append(",");
+							} else {
+								first = false;
+								grazed = g == Grazing.NONE ? false : true;  //There is a bug in the app that saves "true" when NONE is selected. This fixes that until the app is fixed.
+							}
+							sB.append(g.name());
+						}
+					}
+					query += "grazed=" + grazed + "&" +
+					"grazing=" + sB.toString() + "&" +
+					
 					"flooding=" + plot.isFlooding() + "&" +
 					"slope=" + (plot.getSlope() == null ? "" : URLEncoder.encode(plot.getSlope(), charset)) + "&" +
 					"slope_shape=" + (plot.getSlopeShape() == null ? "" : URLEncoder.encode(plot.getSlopeShape(), charset)) + "&" +
+					"bedrock_depth=" + (plot.getBedrockDepth() == null ? "" : plot.getBedrockDepth()) + "&" +
+					"stopped_digging_depth=" + (plot.getStoppedDiggingDepth() == null ? "" : plot.getStoppedDiggingDepth()) + "&" +
 					"rock_fragment_for_soil_horizon_1=" + (plot.getRockFragmentForSoilHorizon1() == null ? "" : URLEncoder.encode(plot.getRockFragmentForSoilHorizon1(), charset)) + "&" +
 					"rock_fragment_for_soil_horizon_2=" + (plot.getRockFragmentForSoilHorizon2() ==  null ? "" : URLEncoder.encode(plot.getRockFragmentForSoilHorizon2(), charset)) + "&" +
 					"rock_fragment_for_soil_horizon_3=" + (plot.getRockFragmentForSoilHorizon3() == null ? "" : URLEncoder.encode(plot.getRockFragmentForSoilHorizon3(), charset)) + "&" +

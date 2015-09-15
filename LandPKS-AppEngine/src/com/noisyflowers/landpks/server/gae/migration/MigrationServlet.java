@@ -488,8 +488,8 @@ public class MigrationServlet extends HttpServlet {
         		speciesList.add(oS);
         	}
         	tS.setObservedSpecies(speciesList); 
-        	tS.setSpeciesDensity1(segment.getSpecies1Density());
-        	tS.setSpeciesDensity2(segment.getSpecies2Density());
+        	tS.setSpeciesDensity1(segment.getSpeciesOfInterest1Count());
+        	tS.setSpeciesDensity2(segment.getSpeciesOfInterest2Count());
         	List<com.noisyflowers.lpks.persistence.model.StickSegment> stickSegmentList = new ArrayList<com.noisyflowers.lpks.persistence.model.StickSegment>();
         	for (StickSegment stickSegment : segment.getStickSegments()) {
             	com.noisyflowers.lpks.persistence.model.StickSegment sS = new com.noisyflowers.lpks.persistence.model.StickSegment();

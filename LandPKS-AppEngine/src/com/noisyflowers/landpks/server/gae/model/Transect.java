@@ -46,6 +46,8 @@ public class Transect {
 	private String direction;
 	private String dominantWoodySpecies;
 	private String dominantNonwoodySpecies;
+	private String speciesOfInterest1;
+	private String speciesOfInterest2;
 	private Date modifiedDate = new Date(1);
 
 	@com.google.appengine.repackaged.org.codehaus.jackson.annotate.JsonManagedReference
@@ -86,6 +88,19 @@ public class Transect {
 		this.dominantNonwoodySpecies = species;
 	}
 
+	public String getSpeciesOfInterest1() {
+		return speciesOfInterest1;
+	}
+	public void setSpeciesOfInterest1(String species) {
+		this.speciesOfInterest1 = species;
+	}
+	public String getSpeciesOfInterest2() {
+		return speciesOfInterest2;
+	}
+	public void setSpeciesOfInterest2(String species) {
+		this.speciesOfInterest2 = species;
+	}
+	
 	public List<Segment> getSegments() {
 		return segments;
 	}
